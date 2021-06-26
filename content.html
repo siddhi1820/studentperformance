@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><h1>Predict Student Hours Performance Score</h1></center>
+<form action="{{url_for('predict')}}" method="post">
+
+<center><input type="text" name="hourperformance" placeholder="hourperformance"required="required"/></center>
+ <br>
+    <center><button type="submit">predict</button></center>
+</form>
+<br>
+<br>
+<center>{{prediction_text}}</center>
+</body>
+</html>
